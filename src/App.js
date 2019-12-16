@@ -1,6 +1,7 @@
 import React from 'react';
 
-import './test/removeDuplicates'
+// import './test/strStr'
+import './adventofcode/Sunny'
 class App extends React.Component {
 
     render(){
