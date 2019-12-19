@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import './test/strStr'
-import './adventofcode/Sunny'
+import './adventofcode/amplify'
 class App extends React.Component {
 
     render(){
