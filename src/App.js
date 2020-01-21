@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import './adventofcode/spaceImageFormat'
-import func from './dataStructure/insertSort';
+import func from './test/strParse';
 
 class App extends React.Component {
     render(){
