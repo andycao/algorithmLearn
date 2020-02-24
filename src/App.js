@@ -1,7 +1,9 @@
 import React from 'react';
 
 // import './adventofcode/spaceImageFormat'
-import func from './test/strParse';
+
+// import func from './test/strParse';
+import func from './leetcode_js/longestPalindrome';
 
 class App extends React.Component {
     render(){
