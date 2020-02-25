@@ -1,0 +1,18 @@
+.space {
+    display: inline-block;
+    width: 100px;
+}
+
+.a {
+    background-color: red;
+}
+.b {
+    background-color: blue;
+}
+.c {
+    background-color: greenyellow;
+}
+
+.outer {
+    border: 1px solid black;
+}

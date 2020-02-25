@@ -26,6 +26,17 @@ function testPalindrome(str) {
     return reverse == str;
 }
 
+function testPal(str, i, j) {
+    while(i < j) {
+        if(str.charAt(i) !== str.charAt(j)){
+            return false
+        }
+        i++;
+        j--;
+    }
+    return true;
+}
+
 function findLongestAround(str, left, right) {
 
     while (left >= 0 && right < str.length && str.charAt(left) === str.charAt(right)) {
@@ -34,6 +45,25 @@ function findLongestAround(str, left, right) {
     }
     return right - left - 1
 }
+
+const longestPalindromeViolence = function (str) {
+    const len = str.length;
+    if(len < 2) {
+        return str;
+    }
+
+    let res = str.substr(0, 1);
+    for (let i = 0; i < len; i++) {
+        for(let j = i; j < len; j++) {
+            if(j - i + 1 > res.length && testPal(str, i, j)) {
+                res = str.substr(i, j - i + 1);
+            }
+        }
+    }
+
+    return res;
+}
+
 
 export default () => {
     console.log(
