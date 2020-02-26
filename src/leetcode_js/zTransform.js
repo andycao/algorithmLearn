@@ -18,7 +18,6 @@ var convert = function (str, numRows) {
 
     let flag = 0; //down
     let index = 0;
-    debugger
     for (let e of str) {
 
         myMap.get(index).push(e);
