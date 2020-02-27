@@ -3,7 +3,7 @@ import React from 'react';
 // import './adventofcode/spaceImageFormat'
 
 // import func from './test/strParse';
-import func from './leetcode_js/zTransform';
+import func from './leetcode_js/lastWordLength';
 import './style/style.css';
 
 class App extends React.Component {
