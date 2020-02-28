@@ -64,6 +64,7 @@ module.exports = function(webpackEnv) {
   // Webpack uses `publicPath` to determine where the app is being served from.
   // It requires a trailing slash, or the file assets will get an incorrect path.
   // In development, we always serve from the root. This makes config easier.
+  // 项目编译绝对路径 相对路径
   const publicPath = isEnvProduction
     ? './'
     : isEnvDevelopment && '/';
