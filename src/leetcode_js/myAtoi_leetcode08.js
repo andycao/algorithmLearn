@@ -1,4 +1,5 @@
 /**
+ * 8. 字符串转换整数 (atoi)
  * @param {string} str
  * @return {number}
  */

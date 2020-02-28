@@ -8,7 +8,6 @@ var longestPalindrome = function (s) {
 
     let res = '';
 
-    debugger
     for (let i = 0; i < s.length; i++) {
         let len1 = findLongestAround(s, i, i); //奇数
         let len2 = findLongestAround(s, i, i + 1) //偶数
