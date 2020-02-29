@@ -3,7 +3,7 @@ function Header() {
     return (
         <div>
             <h2>算法学习记录</h2>
-            <p>点击如下名称，查看执行效果</p>
+            <p>点击查看执行结果，console</p>
             <hr></hr>
         </div>
     );

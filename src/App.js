@@ -4,7 +4,7 @@ import TaskList from './pages/list';
 
 class App extends React.Component {
     render(){
-        return (<div>
+        return (<div className='container'>
             <Header />
             <TaskList />
         </div>);

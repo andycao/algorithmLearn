@@ -21,8 +21,8 @@ var myAtoi = function(str) {
 };
 
 export default () => {
-    console.log(
-        myAtoi('-91283472332-=')
-    );
+    const res = myAtoi('-91283472332-=')
+    console.log(res);
+    return res;
 }
 

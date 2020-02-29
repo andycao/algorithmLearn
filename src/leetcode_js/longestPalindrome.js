@@ -63,9 +63,12 @@ const longestPalindromeViolence = function (str) {
     return res;
 }
 
-
 export default () => {
-    console.log(
-        longestPalindrome('dabbac')
-    );
+    let input = 'abcabcabcabccedabbac'
+    let out = longestPalindrome(input)
+    //输出 console
+    console.log(out);
+
+    //输出 obj 展示
+    return out;
 }

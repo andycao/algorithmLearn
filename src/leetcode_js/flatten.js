@@ -12,13 +12,13 @@
 
 const flatten = function (array) {
     return array.reduce(
-        (acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), 
+        (acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val),
         [])
 }
 
 export default () => {
-    console.log(
-        flatten([1,2,3,[4, 5, 6, [7, 8]]])
-    );
+    const res = flatten([1, 2, 3, [4, 5, 6, [7, 8]]])
+    console.log(res);
+    return res;
 }
 
