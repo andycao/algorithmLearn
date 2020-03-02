@@ -5,6 +5,7 @@
  *     this.next = null;
  * }
  */
+
 /**
  * 迭代的方法
  * @param {ListNode} head
