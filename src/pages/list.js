@@ -5,6 +5,7 @@ import flatten from '../leetcode_js/flatten';
 import longestPalindrome from '../leetcode_js/longestPalindrome';
 import reverseLinkedList from '../leetcode_js/reverseLinkedList';
 import mirrorTree101 from '../leetcode_js/mirrorTree101';
+import candies2 from '../leetcode_js/candies2';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -45,6 +46,14 @@ function TaskList() {
             name='镜像二叉树'
             source="leetcode_js/mirrorTree101.js"
         ></Link>
+        <Link
+            func={() => {
+                setResult(candies2())
+            }}
+            name='分糖果2'
+            source="leetcode_js/candies2.js"
+            leetLink="https://leetcode-cn.com/problems/distribute-candies-to-people/solution/js-shu-zu-by-egerton/"
+        ></Link>
     </ul>
         <div className="result">
             {result}
@@ -59,6 +68,9 @@ function Link(props) {
             window.open(urlPrefix + props.source)
         }}>源码</span>
         <span className="link" onClick={props.func}>运行</span>
+        {props.leetLink?<span className="link" onClick={() => {
+            window.open(props.leetLink)
+        }}>leetcode题解</span> : null}
     </li>;
 }
 
