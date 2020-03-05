@@ -50,7 +50,7 @@ function TaskList() {
             func={() => {
                 setResult(candies2())
             }}
-            name='分糖果2'
+            name='1103.分糖果2'
             source="leetcode_js/candies2.js"
             leetLink="https://leetcode-cn.com/problems/distribute-candies-to-people/solution/js-shu-zu-by-egerton/"
         ></Link>
