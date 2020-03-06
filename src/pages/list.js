@@ -6,6 +6,7 @@ import longestPalindrome from '../leetcode_js/longestPalindrome';
 import reverseLinkedList from '../leetcode_js/reverseLinkedList';
 import mirrorTree101 from '../leetcode_js/mirrorTree101';
 import candies2 from '../leetcode_js/candies2';
+import findContinuousSequence from '../leetcode_js/findContinuousSequence';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -53,6 +54,14 @@ function TaskList() {
             name='1103.分糖果2'
             source="leetcode_js/candies2.js"
             leetLink="https://leetcode-cn.com/problems/distribute-candies-to-people/solution/js-shu-zu-by-egerton/"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(findContinuousSequence())
+            }}
+            name='57 - II 连续正整数序列'
+            source="leetcode_js/findContinuousSequence.js"
+            leetLink="https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/solution/javascript-shuang-zhi-zhen-hua-dong-chuang-kou-by-/"
         ></Link>
     </ul>
         <div className="result">

@@ -22,7 +22,7 @@ var longestPalindrome = function (s) {
 
 function testPalindrome(str) {
     let reverse = [...str].reverse().join('');
-    return reverse == str;
+    return reverse === str;
 }
 
 function testPal(str, i, j) {
