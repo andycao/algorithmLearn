@@ -8,6 +8,8 @@ import mirrorTree101 from '../leetcode_js/mirrorTree101';
 import candies2 from '../leetcode_js/candies2';
 import findContinuousSequence from '../leetcode_js/findContinuousSequence';
 import preorderTraversal from '../leetcode_js/preorderTraversal';
+import maxProfit from '../leetcode_js/maxProfit';
+import isSameTree from '../leetcode_js/isSameTree';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -71,6 +73,28 @@ function TaskList() {
             name='144.二叉树先序遍历'
             source="leetcode_js/preorderTraversal.js"
             leetLink="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/solution/di-gui-zan-cun-zhan-by-egerton/"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(maxProfit())
+            }}
+            name='121. 买卖股票的最佳时机'
+            source="leetcode_js/maxProfit.js"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(maxProfit())
+            }}
+            name='121. 买卖股票的最佳时机'
+            source="leetcode_js/maxProfit.js"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(isSameTree())
+            }}
+            name='100. 相同的树'
+            source="leetcode_js/isSameTree.js"
+            leetLink='https://leetcode-cn.com/problems/same-tree/solution/javascript-xian-xu-bian-li-by-egerton/'
         ></Link>
     </ul>
         <div className="result">
