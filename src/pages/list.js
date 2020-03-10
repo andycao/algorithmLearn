@@ -10,6 +10,7 @@ import findContinuousSequence from '../leetcode_js/findContinuousSequence';
 import preorderTraversal from '../leetcode_js/preorderTraversal';
 import maxProfit from '../leetcode_js/maxProfit';
 import isSameTree from '../leetcode_js/isSameTree';
+import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -95,6 +96,13 @@ function TaskList() {
             name='100. 相同的树'
             source="leetcode_js/isSameTree.js"
             leetLink='https://leetcode-cn.com/problems/same-tree/solution/javascript-xian-xu-bian-li-by-egerton/'
+        ></Link>
+        <Link
+            func={() => {
+                setResult(diameterOfBinaryTree())
+            }}
+            name='543.二叉树的直径'
+            source="leetcode_js/diameterOfBinaryTree.js"
         ></Link>
     </ul>
         <div className="result">
