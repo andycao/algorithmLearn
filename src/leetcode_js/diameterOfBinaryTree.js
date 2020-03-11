@@ -10,7 +10,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var diameterOfBinaryTree = function(root) {
+let diameterOfBinaryTree = function(root) {
     //在作用域内保存变量
     let maxRadius = 0;
     findDepth(root);

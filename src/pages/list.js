@@ -11,6 +11,7 @@ import preorderTraversal from '../leetcode_js/preorderTraversal';
 import maxProfit from '../leetcode_js/maxProfit';
 import isSameTree from '../leetcode_js/isSameTree';
 import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
+import canThreePartsEqualSum from '../leetcode_js/canThreePartsEqualSum';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -102,6 +103,13 @@ function TaskList() {
                 setResult(diameterOfBinaryTree())
             }}
             name='543.二叉树的直径'
+            source="leetcode_js/diameterOfBinaryTree.js"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(canThreePartsEqualSum())
+            }}
+            name='1013. 将数组分成和相等的三个部分'
             source="leetcode_js/diameterOfBinaryTree.js"
         ></Link>
     </ul>
