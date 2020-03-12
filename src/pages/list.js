@@ -12,6 +12,7 @@ import maxProfit from '../leetcode_js/maxProfit';
 import isSameTree from '../leetcode_js/isSameTree';
 import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
 import canThreePartsEqualSum from '../leetcode_js/canThreePartsEqualSum';
+import gcdOfStrings from '../leetcode_js/gcdOfStrings';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -109,8 +110,16 @@ function TaskList() {
             func={() => {
                 setResult(canThreePartsEqualSum())
             }}
-            name='1013. 将数组分成和相等的三个部分'
+            name='1013.数组三等分'
             source="leetcode_js/diameterOfBinaryTree.js"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(gcdOfStrings())
+            }}
+            name='1071. 字符串的最大公因子'
+            source="leetcode_js/gcdOfStrings.js"
+            leetLink="https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/solution/qie-fen-zheng-ze-biao-da-shi-by-egerton/"
         ></Link>
     </ul>
         <div className="result">
