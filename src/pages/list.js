@@ -13,6 +13,7 @@ import isSameTree from '../leetcode_js/isSameTree';
 import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
 import canThreePartsEqualSum from '../leetcode_js/canThreePartsEqualSum';
 import gcdOfStrings from '../leetcode_js/gcdOfStrings';
+import majorityElement from '../leetcode_js/majorityElement';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -120,6 +121,14 @@ function TaskList() {
             name='1071. 字符串的最大公因子'
             source="leetcode_js/gcdOfStrings.js"
             leetLink="https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/solution/qie-fen-zheng-ze-biao-da-shi-by-egerton/"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(majorityElement())
+            }}
+            name='169. 多数元素'
+            source="leetcode_js/majorityElement.js"
+            leetLink="https://leetcode-cn.com/problems/majority-element/solution/js-bao-li-fa-you-hua-by-egerton/"
         ></Link>
     </ul>
         <div className="result">
