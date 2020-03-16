@@ -14,6 +14,7 @@ import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
 import canThreePartsEqualSum from '../leetcode_js/canThreePartsEqualSum';
 import gcdOfStrings from '../leetcode_js/gcdOfStrings';
 import majorityElement from '../leetcode_js/majorityElement';
+import compressString from '../leetcode_js/compressString';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -129,6 +130,14 @@ function TaskList() {
             name='169. 多数元素'
             source="leetcode_js/majorityElement.js"
             leetLink="https://leetcode-cn.com/problems/majority-element/solution/js-bao-li-fa-you-hua-by-egerton/"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(compressString.func)
+            }}
+            name={compressString.title}
+            source="leetcode_js/compressString.js"
+            leetLink="https://leetcode-cn.com/problems/compress-string-lcci/solution/js-bian-li-by-egerton/"
         ></Link>
     </ul>
         <div className="result">
