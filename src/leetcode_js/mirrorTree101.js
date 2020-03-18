@@ -1,3 +1,4 @@
+/* eslint-disable no-redeclare */
 /**
  * 101 给定一个二叉树，检查它是否是镜像对称的。
 
@@ -67,7 +68,7 @@ var isSymmetric = function (root) {
         let b = list.shift();
 
         if(a === null && b == null) {
-            
+            continue;
         } else if(a === null || b === null) {
             return false;
         } else if(a.val === b.val) {

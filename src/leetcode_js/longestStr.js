@@ -9,7 +9,6 @@ var lengthOfLongestSubstring = function(s) {
     let len = s.length;
     let test = [];
     let max = 0;
-    debugger
     while(j < len) {
         if(test.indexOf(s.charAt(j)) !== -1) {
             test.shift();
