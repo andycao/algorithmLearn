@@ -16,6 +16,7 @@ import gcdOfStrings from '../leetcode_js/gcdOfStrings';
 import majorityElement from '../leetcode_js/majorityElement';
 import compressString from '../leetcode_js/compressString';
 import countCharacters from '../leetcode_js/countChars';
+import isRectangleOverlap from '../leetcode_js/isRectangleOverlap';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -146,6 +147,14 @@ function TaskList() {
             }}
             name={countCharacters.title}
             source="leetcode_js/countChars.js"
+            leetLink="https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/solution/js-bao-li-fa-by-egerton-2/"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(isRectangleOverlap.func)
+            }}
+            name={isRectangleOverlap.title}
+            source="leetcode_js/isRectangleOverlap.js"
             leetLink="https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/solution/js-bao-li-fa-by-egerton-2/"
         ></Link>
     </ul>
