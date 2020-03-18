@@ -155,7 +155,6 @@ function TaskList() {
             }}
             name={isRectangleOverlap.title}
             source="leetcode_js/isRectangleOverlap.js"
-            leetLink="https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/solution/js-bao-li-fa-by-egerton-2/"
         ></Link>
     </ul>
         <div className="result">
