@@ -17,6 +17,7 @@ import majorityElement from '../leetcode_js/majorityElement';
 import compressString from '../leetcode_js/compressString';
 import countCharacters from '../leetcode_js/countChars';
 import isRectangleOverlap from '../leetcode_js/isRectangleOverlap';
+import maxDepth from '../leetcode_js/maxDepth';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -155,6 +156,14 @@ function TaskList() {
             }}
             name={isRectangleOverlap.title}
             source="leetcode_js/isRectangleOverlap.js"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(maxDepth.func)
+            }}
+            name={maxDepth.title}
+            source={maxDepth.file}
+            leetLink={maxDepth.leetLink}
         ></Link>
     </ul>
         <div className="result">
