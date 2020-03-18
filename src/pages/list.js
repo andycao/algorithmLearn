@@ -15,6 +15,7 @@ import canThreePartsEqualSum from '../leetcode_js/canThreePartsEqualSum';
 import gcdOfStrings from '../leetcode_js/gcdOfStrings';
 import majorityElement from '../leetcode_js/majorityElement';
 import compressString from '../leetcode_js/compressString';
+import countCharacters from '../leetcode_js/countChars';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -138,6 +139,14 @@ function TaskList() {
             name={compressString.title}
             source="leetcode_js/compressString.js"
             leetLink="https://leetcode-cn.com/problems/compress-string-lcci/solution/js-bian-li-by-egerton/"
+        ></Link>
+        <Link
+            func={() => {
+                setResult(countCharacters.func)
+            }}
+            name={countCharacters.title}
+            source="leetcode_js/countChars.js"
+            leetLink="https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/solution/js-bao-li-fa-by-egerton-2/"
         ></Link>
     </ul>
         <div className="result">
