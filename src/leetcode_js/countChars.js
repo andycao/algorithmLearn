@@ -66,5 +66,7 @@ export default {
         console.log(res);
         return `拼写单词 ${words} ${chars} : ${res}`;
     },
-    title: '1160. 拼写单词'
+    title: '1160. 拼写单词',
+    file: "leetcode_js/countChars.js",
+
 }

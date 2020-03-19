@@ -17,18 +17,18 @@
  * @param {string} str2
  * @return {string}
  */
-var gcdOfStrings = function(str1, str2) {
+var gcdOfStrings = function (str1, str2) {
     let len1 = str1.length;
     let len2 = str2.length;
-    if(len1 === 0 || len2 === 0) return '';
+    if (len1 === 0 || len2 === 0) return '';
 
-    for(let num = 1; num <= len1; num ++) {
-        if(len1 % num === 0) {
+    for (let num = 1; num <= len1; num++) {
+        if (len1 % num === 0) {
             let xLen = len1 / num;
-            if(len2 % xLen === 0) {
+            if (len2 % xLen === 0) {
                 //判断string
                 let x = str1.substr(0, xLen);
-                if(isGcd(x, str1) && isGcd(x, str2)) {
+                if (isGcd(x, str1) && isGcd(x, str2)) {
                     return x;
                 }
             }
@@ -49,17 +49,17 @@ var gcdOfStrings = function(str1, str2) {
 var gcdOfStrings = function (str1, str2) {
     let len1 = str1.length;
     let len2 = str2.length;
-    if(len1 === 0 || len2 === 0) return '';
+    if (len1 === 0 || len2 === 0) return '';
 
     let gcdNum = 1;
-    if(len1 > len2) {
+    if (len1 > len2) {
         gcdNum = gcd(len1, len2);
     } else {
         gcdNum = gcd(len2, len1);
     }
 
     let str = str1.substr(0, gcdNum);
-    if(isGcd(str, str1) && isGcd(str, str2)) {
+    if (isGcd(str, str1) && isGcd(str, str2)) {
         return str1.substr(0, gcdNum);
     } else {
         return '';
@@ -76,17 +76,22 @@ function isGcd(x, str) {
 //num1 > num2
 function gcd(num1, num2) {
     let tmp = num1 % num2;
-    if(tmp === 0) {
+    if (tmp === 0) {
         return num2;
     } else {
         return gcd(num2, tmp)
     }
 }
 
-export default () => {
-    let str1 = 'aaaa';
-    let str2 = 'aaaaab';
-    const res = gcdOfStrings(str1, str2);
-    console.log(res);
-    return `gcd of string: ${res}`;
+export default {
+    func: () => {
+        let str1 = 'aaaaaaaa';
+        let str2 = 'aaaa';
+        const res = gcdOfStrings(str1, str2);
+        console.log(res);
+        return `gcd of string: ${res}`;
+    },
+    title: '1071. 字符串的最大公因子',
+    file: "leetcode_js/gcdOfStrings.js",
+    leetLink: "https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/solution/qie-fen-zheng-ze-biao-da-shi-by-egerton/"
 }

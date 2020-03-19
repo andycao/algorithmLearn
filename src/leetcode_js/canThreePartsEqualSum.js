@@ -8,18 +8,18 @@
  * @param {number[]} A
  * @return {boolean}
  */
-var canThreePartsEqualSum = function(A) {
-    if(A.length < 3) return false;
-    
+var canThreePartsEqualSum = function (A) {
+    if (A.length < 3) return false;
+
     let a = 0, b = 0, c = 0;
-    for(let i = 1;i < A.length - 1; i++) {
+    for (let i = 1; i < A.length - 1; i++) {
         a += A[i - 1];
         b = 0;
-        for(let j = i + 1; j < A.length; j++) {
+        for (let j = i + 1; j < A.length; j++) {
             b += A[j - 1];
-            if(a === b) {
+            if (a === b) {
                 c = sum(A, j, A.length);
-                if(a === c) {
+                if (a === c) {
                     return true;
                 }
             }
@@ -31,17 +31,20 @@ var canThreePartsEqualSum = function(A) {
 
 function sum(array, i, j) {
     let sum = 0;
-    for(let index = i; index < j; index ++) {
+    for (let index = i; index < j; index++) {
         sum += array[index];
     }
 
     return sum;
 }
 
-export default () => {
-    let list = [3,3,6,5,-2,2,5,1,-9,4]
-    const res = canThreePartsEqualSum(list)
-    console.log(res);
-    return `${res}`;
+export default {
+    func: () => {
+        let list = [3, 3, 6, 5, -2, 2, 5, 1, -9, 4]
+        const res = canThreePartsEqualSum(list)
+        console.log(res);
+        return `${res}`;
+    },
+    title: '1013. 数组三等分',
+    file: "leetcode_js/diameterOfBinaryTree.js",
 }
-

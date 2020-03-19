@@ -95,11 +95,13 @@ root.right.right = new TreeNode(3);
 root.left.right = new TreeNode(4);
 root.right.left = new TreeNode(4);
 
-export default () => {
-    let res = isSymmetric(root);
-    console.log(root, res);
+export default {
+    func: () => {
+        let res = isSymmetric(root);
+        console.log(res);
 
-    return `isSymmetric ${res}`
+        return `isSymmetric ${res}`
+    },
+    title: '101. 镜像二叉树',
+    file: "leetcode_js/mirrorTree.js",
 }
-
-

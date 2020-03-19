@@ -64,12 +64,14 @@ const longestPalindromeViolence = function (str) {
     return res;
 }
 
-export default () => {
-    let input = 'abcabcabcabccedabbac'
-    let out = longestPalindrome(input)
-    //输出 console
-    console.log(out);
+export default {
+    func: () => {
+        let input = 'abcabcabcabccedabbac'
+        let out = longestPalindrome(input)
+        console.log(out);
 
-    //输出 obj 展示
-    return out;
+        return `最长回文子串 ${out}`;
+    },
+    title: '5. 最长回文子串',
+    file: "leetcode_js/longestPalindrome.js",
 }

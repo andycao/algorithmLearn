@@ -1,4 +1,5 @@
 /**
+ * 反转链表
  * Definition for singly-linked list.
  * function ListNode(val) {
  *     this.val = val;
@@ -64,11 +65,17 @@ h1.next = new ListNode(2);
 h1.next.next = new ListNode(3);
 h1.next.next.next = new ListNode(4);
 
-export default () => {
-    let old = JSON.stringify(h1);
+
+export default {
+    func: () => {
+        let old = JSON.stringify(h1);
     let newH = reverseList(h1);
     console.log('old', old);
     console.log('new', newH);
 
     return JSON.stringify(newH)
+
+    },
+    title: '反转链表',
+    file: "leetcode_js/reverseLinkedList.js",
 }

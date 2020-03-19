@@ -72,9 +72,14 @@ root.right.right = new TreeNode(3);
 root.left.right = new TreeNode(4);
 root.right.left = new TreeNode(4);
 
-export default () => {
-    let res = preorderTraversal(root);
-    console.log(res);
+export default {
+    func: () => {
+        let res = preorderTraversal(root);
+        console.log(res);
 
-    return JSON.stringify(res);
+        return `先序遍历 ${JSON.stringify(res)}`;
+    },
+    title: '144. 二叉树先序遍历',
+    file: "leetcode_js/preorderTraversal.js",
+    leetLink: "https://leetcode-cn.com/problems/binary-tree-preorder-traversal/solution/di-gui-zan-cun-zhan-by-egerton/"
 }

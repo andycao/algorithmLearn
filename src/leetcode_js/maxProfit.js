@@ -58,11 +58,15 @@ var maxProfit = function (prices) {
     return max;
 }
 
-export default () => {
-    // let list = [2,1,2,0,1];
+export default {
+    func: () => {
+        // let list = [2,1,2,0,1];
     let list = [2, 1, 2, 0, 1, 5, 4, 1, 6];
     let res = maxProfit(list);
     console.log(res);
 
     return JSON.stringify(`max profit: ${res}`);
+    },
+    title: '121. 买卖股票的最佳时机',
+    file: "leetcode_js/maxProfit.js",
 }

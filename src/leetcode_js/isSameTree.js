@@ -14,13 +14,13 @@
  * @param {TreeNode} q
  * @return {boolean}
  */
-var isSameTree = function(p, q) {
-    if(p === null && q === null) return true;
-    if(p === null || q === null) return false;
+var isSameTree = function (p, q) {
+    if (p === null && q === null) return true;
+    if (p === null || q === null) return false;
 
-    return p.val === q.val && 
-    isSameTree(p.left, q.left) &&
-    isSameTree(p.right, q.right);
+    return p.val === q.val &&
+        isSameTree(p.left, q.left) &&
+        isSameTree(p.right, q.right);
 };
 
 function TreeNode(val) {
@@ -36,11 +36,15 @@ let root2 = new TreeNode(1);
 root2.left = new TreeNode(2);
 root2.right = new TreeNode(3);
 
-export default () => {
-    let res = isSameTree(root1, root2);
-    console.log(root1, root2, res);
+export default {
+    func: () => {
+        let res = isSameTree(root1, root2);
+        console.log(root1, root2, res);
 
-    return `isSame tree ${res}`
+        return `isSame tree ${res}`
+    },
+    title: '100. 相同的树',
+    file: "leetcode_js/isSameTree.js",
+    leetLink: 'https://leetcode-cn.com/problems/same-tree/solution/javascript-xian-xu-bian-li-by-egerton/'
+
 }
-
-

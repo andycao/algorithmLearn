@@ -44,8 +44,13 @@ var distributeCandies = function(candies, num_people) {
     
 };
 
-export default () => {
-    const res = distributeCandies(16, 3)
+export default {
+    func: () => {
+        const res = distributeCandies(16, 3)
     console.log(res);
     return JSON.stringify(res);
+    },
+    title: '1103.分糖果2',
+    file: "leetcode_js/candies2.js",
+    leetLink: "https://leetcode-cn.com/problems/distribute-candies-to-people/solution/js-shu-zu-by-egerton/"
 }

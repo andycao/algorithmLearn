@@ -44,5 +44,6 @@ export default {
         console.log(res);
         return `矩形重叠 ${rec1} ${rec2} : ${res}`;
     },
-    title: '836. 矩形重叠'
+    title: '836. 矩形重叠',
+    file: "leetcode_js/isRectangleOverlap.js",
 }

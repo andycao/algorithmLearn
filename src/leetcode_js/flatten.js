@@ -16,9 +16,14 @@ const flatten = function (array) {
         [])
 }
 
-export default () => {
-    const res = flatten([1, 2, 3, [4, 5, 6, [7, 8]]])
-    console.log(res);
-    return res;
-}
 
+export default {
+    func: () => {
+        const res = flatten([1, 2, 3, [4, 5, 6, [7, 8]]])
+        console.log(res);
+
+        return `${res}`;
+    },
+    title: '手写flat',
+    file: "leetcode_js/flatten.js",
+}

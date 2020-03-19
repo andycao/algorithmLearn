@@ -26,24 +26,24 @@
  * @param {number} target
  * @return {number[][]}
  */
-var findContinuousSequence = function(target) {
+var findContinuousSequence = function (target) {
     let result = [];
     //1
-    if(target === 1) {
+    if (target === 1) {
         return result;
     }
 
     //从1 开始 到 Math.ceil(target / 2)
-    for(let i = 1; i < Math.ceil(target / 2); i++) {
+    for (let i = 1; i < Math.ceil(target / 2); i++) {
         let sum = 0;
         let acc = i;
-        while(sum <= target) {
-            if(sum < target) {
+        while (sum <= target) {
+            if (sum < target) {
                 sum += acc++;
-            } else if(sum === target){
+            } else if (sum === target) {
                 //equal array from i ~ acc
                 let array = [];
-                for(let index = i; index < acc; index++) {
+                for (let index = i; index < acc; index++) {
                     array.push(index);
                 }
 
@@ -68,21 +68,21 @@ var findContinuousSequence = function(target) {
 * @param {number} target
 * @return {number[][]}
 */
-var findContinuousSequence = function(target) {
+var findContinuousSequence = function (target) {
     let result = [];
-    if(target === 1) return result;
+    if (target === 1) return result;
     let l = 1;
     let r = 2;
 
     let sum = 0;
     let mid = Math.ceil(target / 2);
-    while(l < mid && l < r) {
+    while (l < mid && l < r) {
         sum = (l + r) * (r - l + 1) / 2;
-        if(sum < target) {
+        if (sum < target) {
             r++;
-        } else if(sum === target) {
+        } else if (sum === target) {
             let array = [];
-            for(let index = l; index <= r; index++) {
+            for (let index = l; index <= r; index++) {
                 array.push(index);
             }
             result.push(array);
@@ -97,8 +97,13 @@ var findContinuousSequence = function(target) {
     return result;
 }
 
-export default () => {
-    const res = findContinuousSequence(15)
-    console.log(res);
-    return JSON.stringify(res);
+export default {
+    func: () => {
+        const res = findContinuousSequence(15)
+        console.log(res);
+        return JSON.stringify(res);
+    },
+    title: '57 - II 连续正整数序列',
+    file: "leetcode_js/findContinuousSequence.js",
+    leetLink: "https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/solution/javascript-shuang-zhi-zhen-hua-dong-chuang-kou-by-/"
 }

@@ -21,11 +21,32 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isValidBST = function(root) {
-    if(root === null) return true;
+var isValidBST = function (root) {
+    if (root === null) return true;
 
     return isValidBST(root.left) && isValidBST(root.right) && root.val > maxVal(root.left) &&
-    root.val < minVal(root.right);
+        root.val < minVal(root.right);
+};
+
+/**
+ * 利用中序遍历的读取顺序，只要当前val比上一个val大就可以了
+ * 默认值为最小值
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isValidBST = function (root) {
+    let prev = Number.MIN_SAFE_INTEGER;
+    let res = true;
+    inorder(root);
+    return res;
+    function inorder(node) {
+        if (node !== null && res) {
+            inorder(node.left);
+            res = res && node.val > prev;
+            prev = node.val;
+            inorder(node.right);
+        }
+    }
 };
 
 /**
@@ -34,18 +55,19 @@ var isValidBST = function(root) {
  * @param {TreeNode} root 
  */
 function maxVal(root) {
-    if(root === null) return Number.MIN_SAFE_INTEGER;
-    if(root.right) return maxVal(root.right);
+    if (root === null) return Number.MIN_SAFE_INTEGER;
+    if (root.right) return maxVal(root.right);
     else return root.val;
 }
+
 /**
  * 找出一棵bst的min
  * 最左边的值
  * @param {TreeNode} root 
  */
 function minVal(root) {
-    if(root === null) return Number.MAX_SAFE_INTEGER;
-    if(root.left) return maxVal(root.left);
+    if (root === null) return Number.MAX_SAFE_INTEGER;
+    if (root.left) return maxVal(root.left);
     else return root.val;
 }
 
@@ -70,7 +92,7 @@ export default {
     },
     title: `98. 验证二叉搜索树`,
     file: "leetcode_js/isValidBST.js",
-    leetLink: 'https://leetcode-cn.com/problems/validate-binary-search-tree/solution/di-gui-hou-xu-sou-suo-by-egerton/'
+    leetLink: 'https://leetcode-cn.com/problems/validate-binary-search-tree/solution/shen-du-you-xian-zhong-xu-bian-li-by-egerton/'
 }
 
 

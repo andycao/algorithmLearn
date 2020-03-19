@@ -40,5 +40,6 @@ export default {
         console.log(res);
         return `compress ${str} : ${res}`;
     },
-    title: '01.06 字符串压缩'
+    title: '01.06 字符串压缩',
+    file: "leetcode_js/compressString.js",
 }

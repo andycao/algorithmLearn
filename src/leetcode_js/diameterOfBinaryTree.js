@@ -10,21 +10,21 @@
  * @param {TreeNode} root
  * @return {number}
  */
-let diameterOfBinaryTree = function(root) {
+let diameterOfBinaryTree = function (root) {
     //在作用域内保存变量
     let maxRadius = 0;
     findDepth(root);
     return maxRadius;
 
-    function findDepth(root){
-        if(root === null) return 0;
+    function findDepth(root) {
+        if (root === null) return 0;
         //max 左侧，右侧
         let leftDepth = findDepth(root.left);
         let rightDepth = findDepth(root.right);
-        
+
         maxRadius = Math.max(maxRadius, leftDepth + rightDepth);
         return Math.max(leftDepth, rightDepth) + 1
-    
+
     }
 };
 
@@ -47,8 +47,13 @@ root1.left.right = new TreeNode(5);
        / \     
       4   5  
  */
-export default () => {
-    const res = diameterOfBinaryTree(root1)
-    console.log(res);
-    return `depth ${res}`;
+
+export default {
+    func: () => {
+        const res = diameterOfBinaryTree(root1)
+        console.log(res);
+        return `直径 ${res}`;
+    },
+    title: '543.二叉树的直径',
+    file: "leetcode_js/diameterOfBinaryTree.js",
 }
