@@ -18,6 +18,7 @@ import compressString from '../leetcode_js/compressString';
 import countCharacters from '../leetcode_js/countChars';
 import isRectangleOverlap from '../leetcode_js/isRectangleOverlap';
 import maxDepth from '../leetcode_js/maxDepth';
+import longestPalindrome2 from '../leetcode_js/longestPalindrome2';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -164,6 +165,14 @@ function TaskList() {
             name={maxDepth.title}
             source={maxDepth.file}
             leetLink={maxDepth.leetLink}
+        ></Link>
+        <Link
+            func={() => {
+                setResult(longestPalindrome2.func)
+            }}
+            name={longestPalindrome2.title}
+            source={longestPalindrome2.file}
+            leetLink={longestPalindrome2.leetLink}
         ></Link>
     </ul>
         <div className="result">
