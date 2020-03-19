@@ -19,6 +19,7 @@ import countCharacters from '../leetcode_js/countChars';
 import isRectangleOverlap from '../leetcode_js/isRectangleOverlap';
 import maxDepth from '../leetcode_js/maxDepth';
 import longestPalindrome2 from '../leetcode_js/longestPalindrome2';
+import isValidBST from '../leetcode_js/isValidBST';
 
 const urlPrefix = 'https://github.com/andycao/algorithmLearn/blob/master/src/'
 function TaskList() {
@@ -173,6 +174,14 @@ function TaskList() {
             name={longestPalindrome2.title}
             source={longestPalindrome2.file}
             leetLink={longestPalindrome2.leetLink}
+        ></Link>
+        <Link
+            func={() => {
+                setResult(isValidBST.func)
+            }}
+            name={isValidBST.title}
+            source={isValidBST.file}
+            leetLink={isValidBST.leetLink}
         ></Link>
     </ul>
         <div className="result">
