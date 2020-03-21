@@ -18,6 +18,8 @@ import reverseLinkedList from '../leetcode_js/reverseLinkedList';
 import mirrorTree from '../leetcode_js/mirrorTree';
 import maxProfit from '../leetcode_js/maxProfit';
 import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
+import getLeastNumbers from '../leetcode_js/getLeastNumbers';
+import canMeasureWater from '../leetcode_js/canMeasureWater';
 
 export default [
     flatten,
@@ -40,4 +42,6 @@ export default [
     maxDepth,
     longestPalindrome2,
     isValidBST,
+    getLeastNumbers,
+    canMeasureWater,
 ]

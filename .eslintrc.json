@@ -23,6 +23,7 @@
     "rules": {
         "no-redeclare":"off",
         "no-unused-vars":"off",
-        "no-irregular-whitespace":"off"
+        "no-irregular-whitespace":"off",
+        "no-debugger":"warn"
     }
 }

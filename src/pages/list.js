@@ -7,8 +7,9 @@ function TaskList() {
     const [result, setResult] = useState();
 
     return <><ul>
-        {leetcodeList.map(entry => {
+        {leetcodeList.map((entry, index) => {
             return <LinkNew
+            key={index}
             setResult={setResult}
             answer={entry}
         ></LinkNew>
