@@ -20,6 +20,7 @@ import maxProfit from '../leetcode_js/maxProfit';
 import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
 import getLeastNumbers from '../leetcode_js/getLeastNumbers';
 import canMeasureWater from '../leetcode_js/canMeasureWater';
+import middleNode from '../leetcode_js/middleNode';
 
 export default [
     flatten,
@@ -44,4 +45,5 @@ export default [
     isValidBST,
     getLeastNumbers,
     canMeasureWater,
+    middleNode,
 ]
