@@ -21,6 +21,7 @@ import diameterOfBinaryTree from '../leetcode_js/diameterOfBinaryTree';
 import getLeastNumbers from '../leetcode_js/getLeastNumbers';
 import canMeasureWater from '../leetcode_js/canMeasureWater';
 import middleNode from '../leetcode_js/middleNode';
+import invertTree from '../leetcode_js/invertTree';
 
 export default [
     flatten,
@@ -46,4 +47,5 @@ export default [
     getLeastNumbers,
     canMeasureWater,
     middleNode,
+    invertTree,
 ]
