@@ -22,6 +22,7 @@ import getLeastNumbers from '../leetcode_js/getLeastNumbers';
 import canMeasureWater from '../leetcode_js/canMeasureWater';
 import middleNode from '../leetcode_js/middleNode';
 import invertTree from '../leetcode_js/invertTree';
+import surfaceArea from '../leetcode_js/surfaceArea';
 
 export default [
     flatten,
@@ -48,4 +49,5 @@ export default [
     canMeasureWater,
     middleNode,
     invertTree,
+    surfaceArea,
 ]
