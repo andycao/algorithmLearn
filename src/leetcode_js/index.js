@@ -23,6 +23,8 @@ import canMeasureWater from '../leetcode_js/canMeasureWater';
 import middleNode from '../leetcode_js/middleNode';
 import invertTree from '../leetcode_js/invertTree';
 import surfaceArea from '../leetcode_js/surfaceArea';
+import numRookCaptures from '../leetcode_js/numRookCaptures';
+import numTrees from '../leetcode_js/numTrees';
 
 export default [
     flatten,
@@ -50,4 +52,6 @@ export default [
     middleNode,
     invertTree,
     surfaceArea,
+    numRookCaptures,
+    numTrees,
 ]
