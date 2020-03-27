@@ -4,4 +4,4 @@
 
 点击项目名 console 查看输出
 
-[效果展示](http://andyopen.com/algorithmLearn/)
+[效果展示](http://andycao.github.io/algorithmLearn/)
