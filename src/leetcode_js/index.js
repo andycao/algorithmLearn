@@ -26,6 +26,7 @@ import surfaceArea from '../leetcode_js/surfaceArea';
 import numRookCaptures from '../leetcode_js/numRookCaptures';
 import numTrees from '../leetcode_js/numTrees';
 import hasGroupsSizeX from '../leetcode_js/hasGroupsSizeX';
+import minimumLengthEncoding from '../leetcode_js/minimumLengthEncoding';
 
 export default [
     flatten,
@@ -56,4 +57,5 @@ export default [
     numRookCaptures,
     numTrees,
     hasGroupsSizeX,
+    minimumLengthEncoding,
 ]

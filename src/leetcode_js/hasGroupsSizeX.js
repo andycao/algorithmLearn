@@ -11,7 +11,6 @@
  */
 /**
  * 数出所有数字卡牌的个数
- * 如果，个数都是偶数，返回true
  * 求这一组的最大公约数，如果大于1则返回true，否则false
  * @param {number[]} deck
  * @return {boolean}
