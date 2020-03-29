@@ -27,6 +27,9 @@ import numRookCaptures from '../leetcode_js/numRookCaptures';
 import numTrees from '../leetcode_js/numTrees';
 import hasGroupsSizeX from '../leetcode_js/hasGroupsSizeX';
 import minimumLengthEncoding from '../leetcode_js/minimumLengthEncoding';
+import findLucky from '../leetcode_js/findLucky';
+import numTeams from '../leetcode_js/numTeams';
+import maxDistance from '../leetcode_js/maxDistance';
 
 export default [
     flatten,
@@ -58,4 +61,7 @@ export default [
     numTrees,
     hasGroupsSizeX,
     minimumLengthEncoding,
+    findLucky,
+    numTeams,
+    maxDistance,
 ]
