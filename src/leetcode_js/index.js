@@ -30,6 +30,7 @@ import minimumLengthEncoding from '../leetcode_js/minimumLengthEncoding';
 import findLucky from '../leetcode_js/findLucky';
 import numTeams from '../leetcode_js/numTeams';
 import maxDistance from '../leetcode_js/maxDistance';
+import lastRemaining from '../leetcode_js/lastRemaining';
 
 export default [
     flatten,
@@ -64,4 +65,5 @@ export default [
     findLucky,
     numTeams,
     maxDistance,
+    lastRemaining,
 ]
