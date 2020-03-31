@@ -31,6 +31,7 @@ import findLucky from '../leetcode_js/findLucky';
 import numTeams from '../leetcode_js/numTeams';
 import maxDistance from '../leetcode_js/maxDistance';
 import lastRemaining from '../leetcode_js/lastRemaining';
+import sortArray from '../leetcode_js/sortArray';
 
 export default [
     flatten,
@@ -66,4 +67,5 @@ export default [
     numTeams,
     maxDistance,
     lastRemaining,
+    sortArray,
 ]
