@@ -32,6 +32,7 @@ import numTeams from '../leetcode_js/numTeams';
 import maxDistance from '../leetcode_js/maxDistance';
 import lastRemaining from '../leetcode_js/lastRemaining';
 import sortArray from '../leetcode_js/sortArray';
+import maxDepthAfterSplit from '../leetcode_js/maxDepthAfterSplit';
 
 export default [
     flatten,
@@ -68,4 +69,5 @@ export default [
     maxDistance,
     lastRemaining,
     sortArray,
+    maxDepthAfterSplit,
 ]
