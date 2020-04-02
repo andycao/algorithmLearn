@@ -33,6 +33,7 @@ import maxDistance from '../leetcode_js/maxDistance';
 import lastRemaining from '../leetcode_js/lastRemaining';
 import sortArray from '../leetcode_js/sortArray';
 import maxDepthAfterSplit from '../leetcode_js/maxDepthAfterSplit';
+import gameOfLife from '../leetcode_js/gameOfLife';
 
 export default [
     flatten,
@@ -70,4 +71,5 @@ export default [
     lastRemaining,
     sortArray,
     maxDepthAfterSplit,
+    gameOfLife,
 ]
