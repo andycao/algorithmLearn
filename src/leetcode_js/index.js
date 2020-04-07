@@ -34,6 +34,7 @@ import lastRemaining from '../leetcode_js/lastRemaining';
 import sortArray from '../leetcode_js/sortArray';
 import maxDepthAfterSplit from '../leetcode_js/maxDepthAfterSplit';
 import gameOfLife from '../leetcode_js/gameOfLife';
+import rotate from '../leetcode_js/rotate';
 
 export default [
     flatten,
@@ -72,4 +73,5 @@ export default [
     sortArray,
     maxDepthAfterSplit,
     gameOfLife,
+    rotate,
 ]
