@@ -35,6 +35,8 @@ import sortArray from '../leetcode_js/sortArray';
 import maxDepthAfterSplit from '../leetcode_js/maxDepthAfterSplit';
 import gameOfLife from '../leetcode_js/gameOfLife';
 import rotate from '../leetcode_js/rotate';
+import trap from '../leetcode_js/trap';
+import LFUCache from '../leetcode_js/LFUCache';
 
 export default [
     flatten,
@@ -73,5 +75,7 @@ export default [
     sortArray,
     maxDepthAfterSplit,
     gameOfLife,
+    trap,
+    LFUCache,
     rotate,
 ]
