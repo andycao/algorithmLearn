@@ -37,6 +37,7 @@ import gameOfLife from '../leetcode_js/gameOfLife';
 import rotate from '../leetcode_js/rotate';
 import trap from '../leetcode_js/trap';
 import LFUCache from '../leetcode_js/LFUCache';
+import movingCount from '../leetcode_js/movingCount';
 
 export default [
     flatten,
@@ -78,4 +79,5 @@ export default [
     trap,
     LFUCache,
     rotate,
+    movingCount,
 ]
