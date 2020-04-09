@@ -38,6 +38,7 @@ import rotate from '../leetcode_js/rotate';
 import trap from '../leetcode_js/trap';
 import LFUCache from '../leetcode_js/LFUCache';
 import movingCount from '../leetcode_js/movingCount';
+import generateParenthesis from '../leetcode_js/generateParenthesis';
 
 export default [
     flatten,
@@ -80,4 +81,5 @@ export default [
     LFUCache,
     rotate,
     movingCount,
+    generateParenthesis,
 ]
