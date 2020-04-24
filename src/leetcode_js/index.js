@@ -39,6 +39,7 @@ import trap from '../leetcode_js/trap';
 import LFUCache from '../leetcode_js/LFUCache';
 import movingCount from '../leetcode_js/movingCount';
 import generateParenthesis from '../leetcode_js/generateParenthesis';
+import superEggDrop from '../leetcode_js/superEggDrop';
 
 export default [
     flatten,
