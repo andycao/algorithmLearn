@@ -41,6 +41,7 @@ import movingCount from '../leetcode_js/movingCount';
 import generateParenthesis from '../leetcode_js/generateParenthesis';
 import superEggDrop from '../leetcode_js/superEggDrop';
 import addTwoNumbers from '../leetcode_js/addTwoNumbers';
+import reversePairs from '../leetcode_js/reversePairs';
 
 export default [
     flatten,
@@ -85,4 +86,5 @@ export default [
     movingCount,
     generateParenthesis,
     addTwoNumbers,
+    reversePairs,
 ]
