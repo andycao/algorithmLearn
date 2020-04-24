@@ -40,6 +40,7 @@ import LFUCache from '../leetcode_js/LFUCache';
 import movingCount from '../leetcode_js/movingCount';
 import generateParenthesis from '../leetcode_js/generateParenthesis';
 import superEggDrop from '../leetcode_js/superEggDrop';
+import addTwoNumbers from '../leetcode_js/addTwoNumbers';
 
 export default [
     flatten,
@@ -83,4 +84,5 @@ export default [
     rotate,
     movingCount,
     generateParenthesis,
+    addTwoNumbers,
 ]
