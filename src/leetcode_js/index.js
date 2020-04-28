@@ -42,6 +42,7 @@ import generateParenthesis from '../leetcode_js/generateParenthesis';
 import superEggDrop from '../leetcode_js/superEggDrop';
 import addTwoNumbers from '../leetcode_js/addTwoNumbers';
 import reversePairs from '../leetcode_js/reversePairs';
+import mergeArray from '../leetcode_js/mergeArray';
 
 export default [
     flatten,
@@ -87,4 +88,5 @@ export default [
     generateParenthesis,
     addTwoNumbers,
     reversePairs,
+    mergeArray
 ]
