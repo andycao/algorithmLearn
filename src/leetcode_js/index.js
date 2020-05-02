@@ -43,6 +43,7 @@ import superEggDrop from '../leetcode_js/superEggDrop';
 import addTwoNumbers from '../leetcode_js/addTwoNumbers';
 import reversePairs from '../leetcode_js/reversePairs';
 import mergeArray from '../leetcode_js/mergeArray';
+import lengthOfLongestSubstring from '../leetcode_js/lengthOfLongestSubstring';
 
 export default [
     flatten,
@@ -88,5 +89,6 @@ export default [
     generateParenthesis,
     addTwoNumbers,
     reversePairs,
-    mergeArray
+    mergeArray,
+    lengthOfLongestSubstring,
 ]
