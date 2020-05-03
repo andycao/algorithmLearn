@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./style.sass";
 import leetcodeList from "../leetcode_js/index";
 import shortid from "shortid";
@@ -7,16 +7,26 @@ const urlPrefix = "https://github.com/andycao/algorithmLearn/blob/master/src/";
 function TaskList(props) {
     //展示结果的index
     const [stageIndex, setStageIndex] = useState();
+    const isFirstRun = useRef(true);
     const [list, setList] = useState(
-        leetcodeList.map((entry) => {
-            return {
-                ...entry,
-                key: shortid.generate(),
-            };
-        })
+        leetcodeList
+            .map((entry) => {
+                return {
+                    ...entry,
+                    key: shortid.generate(),
+                };
+            })
+            .sort((a, b) => {
+                return parseInt(a.title) - parseInt(b.title);
+            })
     );
 
     useEffect(() => {
+        if (isFirstRun.current) {
+            isFirstRun.current = false;
+            return;
+        }
+
         setList([...list].reverse());
         setStageIndex(null);
     }, [props.order]);
