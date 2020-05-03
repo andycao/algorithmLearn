@@ -1,16 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.sass";
 import leetcodeList from "../leetcode_js/index";
+import shortid from "shortid";
 
 const urlPrefix = "https://github.com/andycao/algorithmLearn/blob/master/src/";
-function TaskList() {
+function TaskList(props) {
     //展示结果的index
     const [stageIndex, setStageIndex] = useState();
+    const [list, setList] = useState(
+        leetcodeList.map((entry) => {
+            return {
+                ...entry,
+                key: shortid.generate(),
+            };
+        })
+    );
+
+    useEffect(() => {
+        setList([...list].reverse());
+        setStageIndex(null);
+    }, [props.order]);
 
     return (
         <>
             <ul>
-                {leetcodeList.map((entry, index) => {
+                {list.map((entry, index) => {
                     return (
                         <Quest
                             key={index}

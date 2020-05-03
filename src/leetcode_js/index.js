@@ -44,8 +44,8 @@ import addTwoNumbers from '../leetcode_js/addTwoNumbers';
 import reversePairs from '../leetcode_js/reversePairs';
 import mergeArray from '../leetcode_js/mergeArray';
 import lengthOfLongestSubstring from '../leetcode_js/lengthOfLongestSubstring';
-
-export default [
+import maxSubArray from '../leetcode_js/maxSubArray';
+let list = [
     flatten,
     atoi,
     longestPalindrome,
@@ -91,4 +91,7 @@ export default [
     reversePairs,
     mergeArray,
     lengthOfLongestSubstring,
-]
+    maxSubArray,
+];
+
+export default list;
