@@ -45,6 +45,8 @@ import reversePairs from '../leetcode_js/reversePairs';
 import mergeArray from '../leetcode_js/mergeArray';
 import lengthOfLongestSubstring from '../leetcode_js/lengthOfLongestSubstring';
 import maxSubArray from '../leetcode_js/maxSubArray';
+import jump from '../leetcode_js/jump';
+
 let list = [
     flatten,
     atoi,
@@ -92,6 +94,7 @@ let list = [
     mergeArray,
     lengthOfLongestSubstring,
     maxSubArray,
+    jump,
 ];
 
 export default list;
