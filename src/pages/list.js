@@ -17,7 +17,10 @@ function TaskList(props) {
                 };
             })
             .sort((a, b) => {
-                return parseInt(a.title) - parseInt(b.title);
+                const reg = /\d+/;
+                let ares = a.title.match(reg) || 0;
+                let bres = b.title.match(reg) || 0;
+                return ares - bres;
             })
     );
 

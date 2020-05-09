@@ -32,7 +32,7 @@ var rotate = function(matrix) {
     }
 };
 
-const title = "面试题 01.07. 旋转矩阵"
+const title = "01.07. 旋转矩阵"
 export default {
     func: () => {
         let matrix = 

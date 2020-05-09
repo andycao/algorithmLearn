@@ -26,7 +26,7 @@ var mergeArray = function (A, m, B, n) {
     }
 };
 
-const title = "面试题 10.01. 合并排序的数组";
+const title = "10.01. 合并排序的数组";
 export default {
     func: () => {
         let A = [1, 2, 3, 0, 0, 0];

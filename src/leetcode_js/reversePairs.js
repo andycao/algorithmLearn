@@ -21,7 +21,7 @@ var reversePairs = function(nums) {
     return res;
 };
 
-const title = "面试题51. 数组中的逆序对"
+const title = "51. 数组中的逆序对"
 export default {
     func: () => {
         const n = [7,5,6,4];
