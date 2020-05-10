@@ -57,6 +57,39 @@ var lowestCommonAncestor = function (root, p, q) {
     return ans;
 };
 
+/**
+ * 看了题解后优化，O(n) 后序遍历
+ * postOrder
+ * @param {TreeNode} root
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @return {TreeNode}
+ */
+var lowestCommonAncestor = function (root, p, q) {
+    let ans = null;
+
+    /**
+     * 判断是否包含p q其中之一
+     * 过程中设置ans
+     */
+    function postOrder(node) {
+        if (node === null) return false;
+
+        let leftRes = postOrder(node.left);
+        let rightRes = postOrder(node.right);
+
+        //考虑左右个包含一个，或者当前node是一个左右有一个的情况
+        if (((node === p || node === q) && (leftRes || rightRes)) || (leftRes && rightRes)) {
+            ans = node;
+        }
+
+        return node === p || node === q || leftRes || rightRes;
+    }
+
+    postOrder(root);
+    return ans;
+};
+
 function TreeNode(val) {
     this.val = val;
     this.left = this.right = null;
