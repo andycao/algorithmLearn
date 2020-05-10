@@ -47,8 +47,10 @@ import lengthOfLongestSubstring from "../leetcode_js/lengthOfLongestSubstring";
 import maxSubArray from "../leetcode_js/maxSubArray";
 import jump from "../leetcode_js/jump";
 import mySqrt from "../leetcode_js/mySqrt";
+import lowestCommonAncestor from "../leetcode_js/lowestCommonAncestor";
 
 let list = [
+    lowestCommonAncestor,
     mySqrt,
     flatten,
     atoi,
