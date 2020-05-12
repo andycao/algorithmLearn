@@ -48,8 +48,10 @@ import maxSubArray from "../leetcode_js/maxSubArray";
 import jump from "../leetcode_js/jump";
 import mySqrt from "../leetcode_js/mySqrt";
 import lowestCommonAncestor from "../leetcode_js/lowestCommonAncestor";
+import minStack from "../leetcode_js/minStack";
 
 let list = [
+    minStack,
     lowestCommonAncestor,
     mySqrt,
     flatten,

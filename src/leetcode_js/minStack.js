@@ -67,9 +67,9 @@ MinStack.prototype.getMin = function () {
  */
 export default {
     func: () => {
-        return `${this.title}`;
+        window.open("https://leetcode-cn.com/submissions/detail/70297784/");
     },
     title: `155. 最小栈`,
     file: "leetcode_js/minStack.js",
-    leetLink: "https://leetcode-cn.com/problems/min-stack/",
+    leetLink: "https://leetcode-cn.com/submissions/detail/70297784/",
 };
