@@ -45,7 +45,7 @@ function judge(x, y, k) {
     return v <= k;
 }
 
-const title = "面试题13. 机器人的运动范围"
+const title = "13. 机器人的运动范围"
 export default {
     func: () => {
         let res = movingCount(38, 15, 9);
