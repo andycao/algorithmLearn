@@ -40,6 +40,7 @@ import LFUCache from '../leetcode_js/LFUCache';
 import movingCount from '../leetcode_js/movingCount';
 import generateParenthesis from '../leetcode_js/generateParenthesis';
 import addTwoNumbers from '../leetcode_js/addTwoNumbers';
+import waysToChange from '../leetcode_js/waysToChange';
 
 export default [
     flatten,
@@ -84,4 +85,5 @@ export default [
     movingCount,
     generateParenthesis,
     addTwoNumbers,
+    // waysToChange,
 ]

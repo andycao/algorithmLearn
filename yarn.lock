@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@andycao-npm/prettier-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@andycao-npm/prettier-config/-/prettier-config-1.0.1.tgz#d38bfb6353a3d6454d74286b935bd30bbe6eb407"
+  integrity sha512-Oh8RvFtjLEKI36npekzbThxcLsCvDSHbiPH3JgPzThVOuSGocYZRpxa1AVho4KCJDubXzdTrSRMlpiism7inwQ==
+
 "@babel/code-frame@7.5.5":
   version "7.5.5"
   resolved "https://registry.npm.taobao.org/@babel/code-frame/download/@babel/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
