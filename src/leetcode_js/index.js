@@ -49,8 +49,10 @@ import jump from "../leetcode_js/jump";
 import mySqrt from "../leetcode_js/mySqrt";
 import lowestCommonAncestor from "../leetcode_js/lowestCommonAncestor";
 import minStack from "../leetcode_js/minStack";
+import singleNumber from "../leetcode_js/singleNumber";
 
 let list = [
+    singleNumber,
     minStack,
     lowestCommonAncestor,
     mySqrt,
