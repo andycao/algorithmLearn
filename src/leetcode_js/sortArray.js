@@ -20,7 +20,7 @@ var sortArray = function (nums) {
 
 /**
  * 选择排序
- * @param {number[]} nums 
+ * @param {number[]} nums
  * @returns {number[]}
  */
 var sortArray2 = function (nums) {
@@ -37,8 +37,8 @@ var sortArray2 = function (nums) {
 };
 /**
  * 快速排序
- * 
- * @param {number[]} nums 
+ *
+ * @param {number[]} nums
  * @returns {number[]}
  */
 var sortArray3 = function (nums) {
@@ -57,8 +57,8 @@ var sortArray3 = function (nums) {
 
     /**
      * 对nums的i - j 快速排序
-     * @param {number} i 
-     * @param {number} j 
+     * @param {number} i
+     * @param {number} j
      * @returns {number} middle
      */
     function divide(a, b) {
@@ -86,16 +86,17 @@ function swap(list, i, j) {
     list[i] = temp;
 }
 
-const title = "912. 排序数组"
+const title = "912. 排序数组";
 export default {
     func: () => {
-        const n = [0, 5, 9, 12, 2, 5, 7, 3, 8, 5]
+        const n = [0, 5, 9, 12, 2, 5, 7, 3, 8, 5];
         let res = sortArray3(n);
         console.log(res);
 
-        return `${title}: ${res}`
+        return `${title}: ${res}`;
     },
     title: title,
     file: "leetcode_js/sortArray.js",
-    leetLink: 'https://leetcode-cn.com/problems/sort-an-array/solution/kuai-pai-kan-zhao-jian-dan-xie-qi-lai-nan-by-egert/'
-}
+    leetLink:
+        "https://leetcode-cn.com/problems/sort-an-array/solution/kuai-pai-kan-zhao-jian-dan-xie-qi-lai-nan-by-egert/",
+};
