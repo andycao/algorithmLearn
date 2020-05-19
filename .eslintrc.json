@@ -19,11 +19,15 @@
     "plugins": [
         "react"
     ],
-    "ignorePatterns": ["src/*.js", "src/*.css"],
+    "ignorePatterns": [
+        "src/*.js",
+        "src/*.css"
+    ],
     "rules": {
-        "no-redeclare":"off",
-        "no-unused-vars":"off",
-        "no-irregular-whitespace":"off",
-        "no-debugger":"error"
+        "no-redeclare": "off",
+        "no-unused-vars": "off",
+        "no-irregular-whitespace": "off",
+        "no-debugger": "error",
+        "no-console": "warn"
     }
 }

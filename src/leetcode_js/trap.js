@@ -29,6 +29,7 @@ var trap = function(height) {
         }
     }
 
+    let a ;
     //right
     curr = 0;
     for(let i = height.length - 1; i > maxIndex; i--) {
@@ -47,7 +48,6 @@ export default {
     func: () => {
         const list = [0,1,0,2,1,0,1,3,2,1,2,1];
         const res = trap(list);
-        console.log(res);
 
         return `${title}: ${res}`
     },
